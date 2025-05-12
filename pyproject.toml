@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "python-sql-query-builder"
+version = "0.1.3"
+description = "A fluent Python SQL query builder with support for joins, where clauses, inserts, updates, and more"
+readme = "README.md"
+requires-python = ">=3.7"
+license = { text = "MIT" }
+authors = [
+    { name = "Omer Menashe", email = "unspecified@mail.com" }
+]
+keywords = ["python-sql-query-builder", "sql-query-builder", "sql"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Topic :: Database :: Front-Ends"
+]
