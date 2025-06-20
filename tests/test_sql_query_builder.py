@@ -4,7 +4,6 @@ from sql_query_builder import SQLQueryBuilder
 
 
 class TestSQLQueryBuilder(unittest.TestCase):
-
     def test_select_specific_columns(self):
         query = SQLQueryBuilder().select('id', 'name', 'email').from_table('users').build()
         self.assertEqual(query, 'SELECT id, name, email FROM users')
