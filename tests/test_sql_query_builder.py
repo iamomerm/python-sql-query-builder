@@ -52,8 +52,6 @@ class TestSQLQueryBuilder(unittest.TestCase):
         query = SQLQueryBuilder().drop("TABLE", "users").build()
         self.assertEqual(query, 'DROP TABLE users')
 
-    # New tests for the remaining methods
-
     def test_create_table_query(self):
         query = SQLQueryBuilder().create_table('users', id='INT', name='VARCHAR(100)', email='VARCHAR(100)').build()
         self.assertEqual(query, 'CREATE TABLE users (id INT, name VARCHAR(100), email VARCHAR(100))')
